@@ -11,6 +11,7 @@
   "author": "Ryan Kubik",
   "license": "ISC",
   "dependencies": {
+    "@reach/router": "^1.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

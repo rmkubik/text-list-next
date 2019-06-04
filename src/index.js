@@ -1,11 +1,12 @@
 import ReactDOM from "react-dom";
 import React from "react";
+import { Router, Link } from "@reach/router";
 
 const LandingView = () => {
   return (
     <div>
       <button>Log In</button>
-      <button>Register</button>
+      <Link to="/register">Register</Link>
     </div>
   );
 };
@@ -25,7 +26,12 @@ const RegistrationView = () => {
 };
 
 const App = () => {
-  return <RegistrationView />;
+  return (
+    <Router>
+      <LandingView path="/" />
+      <RegistrationView path="/register" />
+    </Router>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
