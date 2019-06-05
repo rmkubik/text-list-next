@@ -1,5 +1,4 @@
-import ReactDOM from "react-dom";
-import React from "react";
+import "../styles/main.css";
 
 const LandingView = () => {
   return (
@@ -24,7 +23,7 @@ const RegistrationView = () => {
   );
 };
 
-const App = () => {
+const Index = () => {
   return (
     <div>
       <LandingView path="/" />
@@ -33,4 +32,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default Index;
