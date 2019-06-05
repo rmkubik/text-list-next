@@ -1,5 +1,3 @@
-import Layout from "../components/Layout";
-
 const Table = ({ children }) => (
   <table className="w-full text-left table-collapse">{children}</table>
 );
@@ -32,7 +30,7 @@ const TabelBodyCol = ({ children }) => (
 
 const Lists = () => {
   return (
-    <Layout>
+    <>
       <Table>
         <TableHead>
           <TableHeadCol>Number</TableHeadCol>
@@ -52,7 +50,7 @@ const Lists = () => {
           </TableRow>
         </TableBody>
       </Table>
-    </Layout>
+    </>
   );
 };
 

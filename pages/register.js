@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import Button from "../components/Button";
 
 const Field = ({ label, placeholder, id, type = "text" }) => {
@@ -30,7 +29,7 @@ const Field = ({ label, placeholder, id, type = "text" }) => {
 
 const RegistrationView = () => {
   return (
-    <Layout>
+    <>
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <Field label="Username" placeholder="Username" id="username" />
         <Field
@@ -47,7 +46,7 @@ const RegistrationView = () => {
         />
         <Button>Submit</Button>
       </form>
-    </Layout>
+    </>
   );
 };
 
