@@ -29,6 +29,7 @@ const Header = ({ children }) => {
         <div className="text-sm">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/register">Register</NavLink>
+          <NavLink href="/lists">Lists</NavLink>
         </div>
       </NavWrapper>
     </nav>
