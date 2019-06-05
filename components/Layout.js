@@ -1,3 +1,5 @@
+import "../styles/main.css";
+
 import Container from "./Container";
 import Main from "./Main";
 import Header from "./Header";

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "../styles/main.css";
 
 import Button from "../components/Button";
 import Layout from "../components/Layout";
