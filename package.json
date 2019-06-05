@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "now-build": "npm run build",
+    "start": "next start -p $PORT",
+    "deploy": "now"
   },
   "author": "Ryan Kubik",
   "license": "ISC",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "now": "^15.3.0",
     "prettier": "^1.17.1"
   }
 }
