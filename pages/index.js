@@ -1,25 +1,18 @@
+import Link from "next/link";
 import "../styles/main.css";
+
+import Button from "../components/Button";
+import Container from "../components/Container";
 
 const LandingView = () => {
   return (
-    <div>
-      <button>Log In</button>
-      <button to="/register">Register</button>
-    </div>
-  );
-};
+    <Container>
+      <Button>Log In</Button>
 
-const RegistrationView = () => {
-  return (
-    <form>
-      <label>User Name</label>
-      <input />
-      <label>Password</label>
-      <input />
-      <label>Confirm Password</label>
-      <input />
-      <input type="submit" />
-    </form>
+      <Link href="/register">
+        <Button>Register</Button>
+      </Link>
+    </Container>
   );
 };
 
@@ -27,7 +20,6 @@ const Index = () => {
   return (
     <div>
       <LandingView path="/" />
-      <RegistrationView path="/register" />
     </div>
   );
 };
