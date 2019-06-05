@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { useContext } from "react";
 
-import Auth from "../services/auth.js";
+import AuthContext from "../contexts/auth";
 import Button from "../components/Button";
 
 const LandingView = () => {
+  const auth = useContext(AuthContext);
+
   return (
     <>
       <Button
         onClick={() => {
-          const auth = new Auth();
           auth.login();
         }}
       >

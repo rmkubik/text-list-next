@@ -1,6 +1,10 @@
 import App, { Container } from "next/app";
 
-import Auth from "../services/auth.js";
+import AuthContext from "../contexts/auth";
+import Auth from "../services/auth";
+
+const auth = new Auth();
+
 import Layout from "../components/Layout";
 
 class TextListApp extends App {
@@ -9,9 +13,11 @@ class TextListApp extends App {
 
     return (
       <Container>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <AuthContext.Provider value={auth}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </AuthContext.Provider>
       </Container>
     );
   }
