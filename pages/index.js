@@ -16,11 +16,7 @@ const LandingView = () => {
 };
 
 const Index = () => {
-  return (
-    <div>
-      <LandingView path="/" />
-    </div>
-  );
+  return <LandingView />;
 };
 
 export default Index;
