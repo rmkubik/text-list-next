@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "auth0-js": "^9.10.4",
+    "auth0-js": "^9.13.2",
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
